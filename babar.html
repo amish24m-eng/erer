@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nishita Brahua</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #fff0f5;
+      color: #4a4a4a;
+      transition: background-color 0.3s ease;
+    }
+
+    a {
+      color: #d45c96;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    a:hover {
+      color: #a03c70;
+      text-shadow: 0 0 6px #f3c3e0;
+    }
+
+    header {
+      background: linear-gradient(to right, #f9c5d1, #fbc2eb);
+      color: white;
+      padding: 100px 20px 80px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 64px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+      animation: pulse 3s infinite;
+    }
+
+    header h1:hover {
+      transform: scale(1.08);
+      text-shadow: 0 0 10px #fff;
+    }
+
+    header p {
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      animation: fadeIn 2s ease;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    h2 {
+      text-align: center;
+      color: #c94f7c;
+      font-size: 36px;
+      margin-bottom: 30px;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #c94f7c;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    h2:hover {
+      transform: scale(1.05);
+      text-shadow: 0 0 5px #f8a9d2;
+    }
+
+    .qualities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+
+    .quality {
+      background: #ffeaf4;
+      border-radius: 14px;
+      padding: 25px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .quality:hover {
+      transform: translateY(-10px) scale(1.05) rotateZ(-1deg);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+      background: #fff2f7;
+    }
+
+    .quality h3 {
+      color: #d45c96;
+      font-size: 22px;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .quality h3:hover {
+      color: #9c3a6a;
+    }
+
+    .quality p {
+      font-size: 16px;
+      line-height: 1.6;
+      transition: transform 0.3s ease;
+    }
+
+    .quality:hover p {
+      transform: scale(1.02);
+    }
+
+    .contact {
+      background: #fbc2eb;
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin: 10px 0;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .contact p:hover {
+      transform: scale(1.05);
+      text-shadow: 0 0 6px #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #fff5fa;
+      color: #999;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 48px;
+      }
+
+      .qualities {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .quality {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nishita Brahua</h1>
+  <p>"Empowered. Elegant. Unstoppable."</p>
+</header>
+
+<section>
+  <h2>About Nishita</h2>
+  <p style="text-align: center; max-width: 700px; margin: auto; font-size: 18px; transition: all 0.3s ease;"
+     onmouseover="this.style.transform='scale(1.03)'; this.style.color='#b1366b';"
+     onmouseout="this.style.transform='scale(1)'; this.style.color='#4a4a4a';">
+    Nishita Brahua is a dynamic, graceful, and inspiring individual who believes in living life with passion and purpose. 
+    With a heart full of empathy and a mind full of ideas, she blends strength with softness in everything she does.
+  </p>
+</section>
+
+<section>
+  <h2>Her Beautiful Qualities</h2>
+  <div class="qualities">
+    <div class="quality">
+      <h3>Confident</h3>
+      <p>She walks with poise and speaks with clarity, making her presence known in every room.</p>
+    </div>
+    <div class="quality">
+      <h3>Empathetic</h3>
+      <p>She understands and shares the feelings of others, always offering a listening ear.</p>
+    </div>
+    <div class="quality">
+      <h3>Creative</h3>
+      <p>Her ideas are original, her visions unique — she brings beauty into the ordinary.</p>
+    </div>
+    <div class="quality">
+      <h3>Resilient</h3>
+      <p>Challenges make her stronger. She rises every time with even more grace.</p>
+    </div>
+    <div class="quality">
+      <h3>Elegant</h3>
+      <p>From her words to her wardrobe, elegance defines her every step.</p>
+    </div>
+    <div class="quality">
+      <h3>Inspiring</h3>
+      <p>Her journey lights the path for others to follow their own dreams.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Let's Connect</h2>
+  <p>Email: <a href="mailto:nishita@example.com">nishita@example.com</a></p>
+  <p>Instagram: <a href="#">@nishita.brahua</a></p>
+</section>
+
+<footer>
+  © 2025 Nishita Brahua. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
